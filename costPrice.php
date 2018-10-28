@@ -6,7 +6,8 @@ $vat = ($margin + $cost + $shipping) * 0.21;
 $retail = $cost + $shipping + $margin + $vat;
 
 /* 1 spaudziant calculate reiksme kazkodel kaskart keiciasi
-2 ka reiskia "?" ir : 0;*/
+2 ka reiskia "?" ir : 0;
+3 ka daro - tabindex="0" autofocus nes isjungiau juos ir skirtumo nepastebejau*/
 ?>
 
 <!doctype html>
