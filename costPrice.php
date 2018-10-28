@@ -4,6 +4,9 @@ $shipping = $_GET['cost_price'] < 40 ? 10 : 0;
 $margin = isset($_GET['margin']) && !empty($_GET['margin']) ? $cost * ($_GET['margin']/100) : 0;
 $vat = ($margin + $cost + $shipping) * 0.21;
 $retail = $cost + $shipping + $margin + $vat;
+
+/* 1 spaudziant calculate reiksme kazkodel kaskart keiciasi
+2 ka reiskia "?" ir : 0;*/
 ?>
 
 <!doctype html>
@@ -28,7 +31,7 @@ $retail = $cost + $shipping + $margin + $vat;
 						<div class="input-group-prepend">
 							<span class="input-group-text">Cost price</span>
 						</div> 
-						<input tabindex="0" autofocus class="form-control" type="text" name="cost_price" value="<?= $cost ?>">
+						<input tabindex="0" autofocus class="form-control" type="text" name="cost_price" value="<?= $cost ?>"> 
 						<div class="input-group-append">
 					    <span class="input-group-text">Eur</span>
 					  </div>
